@@ -10,7 +10,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: linear-gradient(135deg, #ff6b6b, #556270);
+    background: #1d212d;
     color: #fff;
     text-align: center;
 }
@@ -20,7 +20,6 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    text-align: center;
 }
 
 .content {
@@ -30,7 +29,7 @@ body {
 }
 
 h1 {
-    font-size: 3em;
+    font-size: 2.5em;
     margin-bottom: 0.5em;
 }
 
