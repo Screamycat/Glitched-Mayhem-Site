@@ -32,12 +32,11 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 20px; /* Add padding for better spacing on mobile */
 }
 
 .content {
     background: rgba(0, 0, 0, 0.7);
-    padding: 20px;
+    padding: 40px;
     border-radius: 10px;
     animation: fadeIn 2s ease-in;
     max-width: 90%; /* Limit width for better readability on mobile */
@@ -46,12 +45,12 @@ body {
 .game-logo {
     color: #f4f4e4;
     width: 120px; /* Adjust size for smaller screens */
-    margin-bottom: 10px; /* Adjust spacing for smaller screens */
+    margin-bottom: 20px; /* Adjust spacing for smaller screens */
 }
 
 .game-hero {
     width: 120px; /* Adjust size for smaller screens */
-    margin-top: 10px; /* Adjust spacing for smaller screens */
+    margin-top: 20px; /* Adjust spacing for smaller screens */
 }
 
 h1 {
@@ -64,21 +63,28 @@ h2 {
     margin-bottom: 1em; /* Adjust spacing for smaller screens */
 }
 
-#countdown {
+.countdown {
     display: flex;
     justify-content: center;
-    margin-bottom: 1em; /* Adjust spacing for smaller screens */
     flex-wrap: wrap; /* Ensure countdown items wrap on smaller screens */
+    margin-bottom: 1em; /* Adjust spacing for smaller screens */
 }
 
-#countdown div {
-    margin: 5px; /* Adjust spacing between countdown items */
-    font-size: 1.2em; /* Adjust font size for smaller screens */
+.countdown-item {
+    margin: 0 10px;
+    font-size: 1.5em;
+    text-align: center;
 }
 
-#countdown span {
+.countdown-item span {
+    display: block;
     font-weight: bold;
-    font-size: 1.5em; /* Adjust font size for smaller screens */
+    font-size: 2em; /* Adjust font size for smaller screens */
+}
+
+.countdown-item div {
+    font-size: 0.8em; /* Adjust font size for smaller screens */
+    margin-top: 5px; /* Adjust spacing between value and label */
 }
 
 p {
@@ -112,12 +118,16 @@ p {
         font-size: 1.2em; /* Further adjust font size for very small screens */
     }
 
-    #countdown div {
-        font-size: 1em; /* Further adjust font size for very small screens */
+    .countdown-item {
+        font-size: 1.2em; /* Further adjust font size for very small screens */
     }
 
-    #countdown span {
-        font-size: 1.3em; /* Further adjust font size for very small screens */
+    .countdown-item span {
+        font-size: 1.5em; /* Further adjust font size for very small screens */
+    }
+
+    .countdown-item div {
+        font-size: 0.7em; /* Further adjust font size for very small screens */
     }
 
     p {
