@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Press Start 2P', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #1d212d;
+    color: #fff;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.game-logo {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.game-hero {
+    width: 150px;
+    margin-top: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+#countdown {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+
+#countdown div {
+    margin: 0 10px;
+    font-size: 1.5em;
+}
+
+#countdown span {
+    font-weight: bold;
+    display: block;
+    font-size: 2em;
+}
+
+p {
+    font-size: 1em;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.content {
+    animation: fadeIn 2s ease-in;
+}
