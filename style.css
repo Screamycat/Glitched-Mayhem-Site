@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #ff6b6b, #556270);
+    color: #fff;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 4em;
+    margin-bottom: 0.2em;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+#countdown {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+
+#countdown div {
+    margin: 0 10px;
+    font-size: 2em;
+}
+
+#countdown span {
+    font-weight: bold;
+    display: block;
+    font-size: 3em;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.content {
+    animation: fadeIn 2s ease-in;
+}
