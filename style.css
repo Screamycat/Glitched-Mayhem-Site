@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Press Start 2P', cursive;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,21 +20,22 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    text-align: center;
 }
 
 .content {
-    background: rgba(0, 0, 0, 0.5);
-    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 40px;
     border-radius: 10px;
 }
 
 h1 {
-    font-size: 4em;
-    margin-bottom: 0.2em;
+    font-size: 3em;
+    margin-bottom: 0.5em;
 }
 
 h2 {
-    font-size: 2em;
+    font-size: 1.5em;
     margin-bottom: 1em;
 }
 
@@ -46,17 +47,17 @@ h2 {
 
 #countdown div {
     margin: 0 10px;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 #countdown span {
     font-weight: bold;
     display: block;
-    font-size: 3em;
+    font-size: 2em;
 }
 
 p {
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 @keyframes fadeIn {
