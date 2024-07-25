@@ -27,19 +27,30 @@ body {
     z-index: -1; /* Ensure it stays behind the content */
 }
 
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.spacer {
+    color: #f4f4e4;
+    position: relative;
+    top: 20px;
+    border: none;
+    height: 0.5em;
+    background: #f4f4e4;
+    margin-bottom: 50px;
 }
 
-.content {
+main.content {
     background: rgba(0, 0, 0, 0.7);
+    width: 65%;
     padding: 40px;
-    border-radius: 10px;
+    border-radius: 20px;
+    margin: 40px 0; /* Adds equal margin at the top and bottom */
     animation: fadeIn 2s ease-in;
-    max-width: 90%; /* Limit width for better readability on mobile */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner-gif{
+    border-radius: 20px; /* Adjust the value to control the roundness */ 
 }
 
 .game-logo {
@@ -63,33 +74,15 @@ h2 {
     margin-bottom: 1em; /* Adjust spacing for smaller screens */
 }
 
-.countdown {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap; /* Ensure countdown items wrap on smaller screens */
-    margin-bottom: 1em; /* Adjust spacing for smaller screens */
-}
-
-.countdown-item {
-    margin: 0 10px;
-    font-size: 1.5em;
-    text-align: center;
-}
-
-.countdown-item span {
-    display: block;
-    font-weight: bold;
-    font-size: 2em; /* Adjust font size for smaller screens */
-}
-
-.countdown-item div {
-    font-size: 0.8em; /* Adjust font size for smaller screens */
-    margin-top: 5px; /* Adjust spacing between value and label */
-}
-
 p {
+    text-align: start;
     font-size: 0.9em; /* Adjust font size for smaller screens */
     line-height: 1.5; /* Ensure good readability */
+}
+
+strong{
+    color: #FF4F78;
+    font-weight: bold;
 }
 
 @keyframes fadeIn {
@@ -98,39 +91,5 @@ p {
     }
     to {
         opacity: 1;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    .game-logo {
-        width: 100px; /* Further adjust size for very small screens */
-    }
-
-    .game-hero {
-        width: 100px; /* Further adjust size for very small screens */
-    }
-
-    h1 {
-        font-size: 1.8em; /* Further adjust font size for very small screens */
-    }
-
-    h2 {
-        font-size: 1.2em; /* Further adjust font size for very small screens */
-    }
-
-    .countdown-item {
-        font-size: 1.2em; /* Further adjust font size for very small screens */
-    }
-
-    .countdown-item span {
-        font-size: 1.5em; /* Further adjust font size for very small screens */
-    }
-
-    .countdown-item div {
-        font-size: 0.7em; /* Further adjust font size for very small screens */
-    }
-
-    p {
-        font-size: 0.8em; /* Further adjust font size for very small screens */
     }
 }
