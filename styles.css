@@ -9,10 +9,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh; /* Change from height to min-height */
     background: #1d212d;
     color: #f4f4e4;
     text-align: center;
+    margin: 20px 0; /* Add margin to body to create space at the top and bottom */
+    overflow: hidden; /* Hide scrollbars */
 }
 
 .background-banner {
@@ -49,7 +51,7 @@ main.content {
     align-items: center;
 }
 
-.banner-gif{
+.banner-gif {
     border-radius: 20px; /* Adjust the value to control the roundness */ 
 }
 
@@ -57,6 +59,13 @@ main.content {
     color: #f4f4e4;
     width: 120px; /* Adjust size for smaller screens */
     margin-bottom: 20px; /* Adjust spacing for smaller screens */
+}
+
+.project-showcase {
+    width: 600px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 20px; /* Adjust the value to control the roundness */ 
 }
 
 .game-hero {
@@ -80,7 +89,7 @@ p {
     line-height: 1.5; /* Ensure good readability */
 }
 
-strong{
+strong {
     color: #FF4F78;
     font-weight: bold;
 }
