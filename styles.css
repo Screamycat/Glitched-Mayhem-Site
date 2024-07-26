@@ -73,13 +73,19 @@ main.content {
 }
 
 .banner-gif {
+    max-width: 100%;
     border-radius: 20px; /* Adjust the value to control the roundness */ 
 }
 
 .game-logo {
+    max-width: 100%;
     color: #f4f4e4;
     width: 120px; /* Adjust size for smaller screens */
     margin-bottom: 20px; /* Adjust spacing for smaller screens */
+}
+
+.intro {
+    max-width: 100%;
 }
 
 .gameplay {
@@ -126,7 +132,7 @@ main.content {
 
 .game-hero {
     width: 120px; /* Adjust size for smaller screens */
-    margin-top: 20px; /* Adjust spacing for smaller screens */
+    margin-top: 40px; /* Adjust spacing for smaller screens */
 }
 
 h1 {
