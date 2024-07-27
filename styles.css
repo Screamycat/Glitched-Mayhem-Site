@@ -158,6 +158,78 @@ strong {
     font-weight: bold;
 }
 
+.contact-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.contact-button {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.9em;
+    background-color: #FF4F78;
+    color: #1d212d;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
+}
+
+.contact-dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #1d212d;
+    border: 1px solid #FF4F78;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 10px;
+    width: 200px;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.contact-dropdown ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-dropdown ul li {
+    border-bottom: 1px solid #FF4F78;
+}
+
+.contact-dropdown ul li:last-child {
+    border-bottom: none;
+}
+
+.contact-dropdown ul li a {
+    display: block;
+    padding: 10px;
+    color: #f4f4e4;
+    text-decoration: none;
+}
+
+.contact-dropdown ul li a:hover {
+    background-color: #FF4F78;
+    color: #1d212d;
+}
+
+.contact-container:hover .contact-dropdown {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+.contact-container:hover .contact-dropdown:hover {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
 @keyframes fadeIn {
     from {
         opacity: 0;
