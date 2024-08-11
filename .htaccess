@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteRule ^Glitch-Mayhem-Publishing$ publish.html [L]
+RewriteRule ^Portfolio$ portfolio.html [L]
