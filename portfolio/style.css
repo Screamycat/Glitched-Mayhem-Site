@@ -155,6 +155,10 @@ body {
     transition: transform 0.3s;
 }
 
+.portfolio-img {
+    height: 60%;
+}
+
 .portfolio-item:hover {
     transform: scale(1.05);
 }
