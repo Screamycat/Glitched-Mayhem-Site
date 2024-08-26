@@ -10,38 +10,52 @@ body {
     margin: 0 auto;
 }
 
+/* Navbar styles */
 .navbar {
-    background: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #333;
     color: #fff;
-    padding: 1rem 0;
 }
 
 .navbar .container {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .navbar-brand {
-    font-size: 1.5rem;
-    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand .logo {
+    height: 50px; /* Adjust the height as needed */
+    margin-right: 20px; /* Space between logo and nav items */
 }
 
 .navbar-nav {
     list-style: none;
     display: flex;
-    gap: 1rem;
+    gap: 15px;
+}
+
+.navbar-nav li {
+    display: inline;
 }
 
 .navbar-nav a {
     color: #fff;
     text-decoration: none;
-    padding: 0.5rem 1rem;
-    transition: background 0.3s;
+    padding: 5px 10px;
 }
 
 .navbar-nav a:hover {
-    background: #555;
+    background-color: #555;
+    border-radius: 5px;
 }
 
 .header {
