@@ -160,6 +160,10 @@ body {
     /* No fixed width in CSS */
 }
 
+.portfolio-img{
+    max-height: 60%;
+}
+
 .portfolio-item img,
 .portfolio-item iframe {
     display: block;
