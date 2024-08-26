@@ -1,14 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ScreamyCat - Portfolio</title>
-    <link rel="icon" href="/assets/logo.ico" type="image/x-icon">
-
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/logo.ico" type="image/x-icon">
 </head>
-<body>
-    <h1>Portfolio</h1>
-    <a href="/glitched-mayhem-publishing">Glitch-Mayhem-Publishing</a>
 
-    <iframe frameborder="0" src="https://itch.io/embed/2903192?bg_color=2C3E50&amp;fg_color=ffffff&amp;link_color=3498DB" width="552" height="167"><a href="https://screamycat.itch.io/fixed-blueprint">Fixed Blueprint by ScreamyCat</a></iframe>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <img src="/assets/Logo.png" href="/" class="navbar-brand">
+            <ul class="navbar-nav">
+                <li><a href="/">Home</a></li>
+                <li><a href="/resume">Resumé</a></li>
+                <li><a href="/glitched-mayhem-publishing">Other</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header id="home" class="header">
+        <div class="container">
+            <h1>Welcome to my portfolio</h1>
+            <p>Discover my work and projects</p>
+        </div>
+    </header>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2>My Work</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="assets/project1.jpg" alt="Project 1">
+                    <div class="portfolio-info">
+                        <h3>Project 1</h3>
+                        <p>Short description of Project 1.</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="assets/project2.jpg" alt="Project 2">
+                    <div class="portfolio-info">
+                        <h3>Project 2</h3>
+                        <p>Short description of Project 2.</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="assets/project3.jpg" alt="Project 3">
+                    <div class="portfolio-info">
+                        <h3>Project 3</h3>
+                        <p>Short description of Project 3.</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="assets/project4.jpg" alt="Project 4">
+                    <div class="portfolio-info">
+                        <h3>Project 4</h3>
+                        <p>Short description of Project 4.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2023 My Portfolio. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
